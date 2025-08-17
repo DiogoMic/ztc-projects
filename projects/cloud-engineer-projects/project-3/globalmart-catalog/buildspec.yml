@@ -7,10 +7,12 @@ phases:
   pre_build:
     commands:
       - echo Installing dependencies...
+      - cd projects/cloud-engineer-projects/project-3/globalmart-catalog
       - npm install
   build:
     commands:
       - echo Building the React application...
+      - cd projects/cloud-engineer-projects/project-3/globalmart-catalog
       - npm run build
   post_build:
     commands:
@@ -19,4 +21,4 @@ phases:
 artifacts:
   files:
     - '**/*'
-  base-directory: build
+  base-directory: projects/cloud-engineer-projects/project-3/globalmart-catalog/build
